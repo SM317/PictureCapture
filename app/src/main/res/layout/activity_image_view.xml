@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_lable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Picture"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/tv_lable"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_imageview_ok"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight=".5"
+            android:background="@color/colorOrange"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Ok"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_imageview_new"
+            style="?android:buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight=".5"
+            android:background="@color/colorOrange"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Recapture"
+            android:textColor="@color/colorWhite"
+            android:textSize="16dp" />
+    </LinearLayout>
+</RelativeLayout>

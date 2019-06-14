@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidPhotoCapture</string>
+    <string name="ERROR_NO_PERMISSION_TO_ACCESS_CAMERA">No permission to access camera.</string>
+    <string name="ERROR_NO_PERMISSION_READ_WRITE_TO_STORAGE">No permission to read/write external storage.</string>
+</resources>
